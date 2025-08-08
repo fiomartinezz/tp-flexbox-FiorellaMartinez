@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloque Paralelo</title>
+  <style>
+    .cajaa{
+      padding: 10px;
+      display: flex;
+      margin: 5px;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+    .cj1{
+      flex: 1 2 auto;
+      background-color: rgba(123,198,199,0.8);
+      margin: 2px;
+      padding: 5px;
+      width: 50px;
+      height: 80px;
+    }
+    .cj2{
+      flex: 1 2 auto;
+      background-color: rgba(123,198,199,0.8);
+      margin: 2px;
+      padding: 5px;
+      width: 50px;
+      height: 80px;
+    }
+    .cj3{
+      flex: 1 1 auto;
+      background-color: rgba(123,198,199,0.8);
+      margin: 2px;
+      padding: 5px;
+      width: 50px;
+      height: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="cajaa">
+    <article class="cj1">Solo tengo una línea</article>
+    <article class="cj2">Este texto ocupa algo más que el de al lado 
+    <br>Son dos lineas</article>
+    <article class="cj3">Este es más largo que los otros dos y ocupa más líneas
+       <br> <br>Pero todos estos bloques tienen la misma altura y anchura, crecen o de contraen para repartirse el ancho disponible</article>
+  </section>
+</body>
+</html>
