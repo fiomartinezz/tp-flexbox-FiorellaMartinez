@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un sidebar con menú</title>
+    <style>
+        .cajaa {
+            padding: 5px;
+            display: flex;
+            height: 1000px;
+            font-size: 18px;
+        }
+        .cj1 {
+           /* display: flex;
+            flex: 1 1 auto;*/
+            display: block;
+            background-color: lightseagreen;
+            margin: 2px;
+            padding: 20px;
+            width: 20%;
+        }
+        .cj2 {
+            display: flex;
+            flex: 1 1 auto;
+            background-color: rgba(123, 198, 199, 0.8);
+            margin: 2px;
+            padding-left: 20px;
+            width: 80%; 
+            padding-top: 10px;
+        }
+        li {
+            
+            list-style: none;
+            border-bottom: 1px solid;
+            width: 70%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="cajaa">
+        <article class="cj1">
+                <li>Home</li>
+                <li>Servicios</li>
+                <li>Planes</li>
+                <li>Contacto</li>
+        </article>
+        <article class="cj2">Esto sería el contenido principal</article>
+    </section>
+</body>
+</html>
