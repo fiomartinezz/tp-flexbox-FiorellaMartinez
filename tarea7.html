@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Card con flexbox</title>
   <style>
-    .cajaa{
-      padding: 5px;
-      display: flex;
-      height: 1000px;
-      font-size: 18px;
+    .card{
+      display: flex;  
+      flex-direction: column;
+      width: 400px;
+      height: 300px;
+      font-family: sans-serif;
+      box-shadow: 0px 0px 7px 0px lightgrey;
     }
-
-    .cj1 {
-      display: flex;
-      flex: 1 1 auto;
-      background-color: lightseagreen;
-      margin: 2px;
-      padding: 5px;
-      width: 20%;
+    .cabeza{
+      flex-grow: 1;
+      background-color: black;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      color: white;
     }
-    .cj2 {
-      display: flex;
-      flex: 1 1 auto;
-      background-color: rgba(123, 198, 199, 0.8);
-      margin: 2px;
-      padding: 5px;
-      width: 80%;
+    .cuerpo{
+      flex-grow: 200;
+      padding: 8px;
+    }
+    .pie{
+      flex-grow: 1;
+      background-color: gray;
+      color: white;
+      text-align: center;
     }
   </style>
 </head>
-
 <body>
-  <section class="cajaa">
-    <article class="cj1">contenido lateral</article>
-    <article class="cj2">Esto sería el contenido principal</article>
-  </section>
+  <article class="card">
+    <header class="cabeza">
+      <h2>Tarjeta de presentación</h2>
+    </header>
+    <main class="cuerpo">
+      Contenido del cuerpo de la tarjeta
+    </main>
+    <footer class="pie">
+      <h4>Pie de la tarjeta</h4>
+    </footer>
+  </article>
 </body>
-
 </html>

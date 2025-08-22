@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A toda página</title>
+    <style>
+        .padre{
+            display: flex;
+            font-family: sans-serif;
+            height: 100vmin;
+            padding: 15px;
+            flex-direction: column;
+        }
+        .titulo{
+            background-color: orange;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .trescaj{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+        }
+        .latizq{
+            background-color: gray;
+            flex-grow: 1;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+        .zonacen{
+            flex-grow: 2;
+            text-align: center;
+            padding: 10px;
+
+        }
+        .latder{
+            background-color: gray;
+            flex-grow: 1;
+            text-align: center;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="padre">
+        <div class="titulo">
+            <h2>Titulo de la página</h2>
+        </div>
+        <div class="trescaj">
+            <div class="latizq">
+                <p>Lateral izquierdo</p>
+            </div>
+            <div class="zonacen">
+                <p>Zona central</p>
+            </div>
+            <div class="latder">
+                <p>Lateral derecho</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

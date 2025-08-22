@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de dos columnas con filas</title>
+    <style>
+        .padre{
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            font-family: sans-serif;
+            font-size: 18px;
+            padding: 20px;
+        }
+        .colizq{
+            flex-grow: 3;
+            background-color: lightseagreen;
+            padding: 16px;
+            color: white;
+        }
+        .colder{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+        }
+        .deralt{
+            flex-grow: 1;
+            border: solid 1px lightgrey;
+            padding: 24px;
+        }
+        .derbaj{
+            flex-grow: 1;
+            border: solid 1px lightgrey;
+            padding: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="padre">
+        <div class="colizq">
+            Columna izquierda
+        </div>
+        <div class="colder">
+            <div class="deralt">
+                Derecha parte alta
+            </div>
+            <div class="derbaj">
+                Derecha parte baja
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
